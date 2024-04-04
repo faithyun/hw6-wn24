@@ -47,10 +47,13 @@ document.getElementById("skip").addEventListener("click", function(){
 document.getElementById("mute").addEventListener("click", function(){
 	if (video.muted) {
 		video.muted = false;
+		this.innerText = "Unmute";
 		console.log("Unmute");
 	}
 	else { 
+
 		video.muted = true;
+		this.innerText = "Mute";
 		console.log("Mute");
 	}
 }); 
@@ -76,7 +79,7 @@ document.getElementById("vintage").addEventListener("click", function(){
 
 document.getElementById("orig").addEventListener("click", function() { 
 	video.classList.remove("oldSchool");
-});
+}); 
 
 
 
