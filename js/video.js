@@ -47,13 +47,13 @@ document.getElementById("skip").addEventListener("click", function(){
 document.getElementById("mute").addEventListener("click", function(){
 	if (video.muted) {
 		video.muted = false;
-		this.innerText = "Unmute";
+		this.innerText = "Mute";
 		console.log("Unmute");
 	}
 	else { 
 
 		video.muted = true;
-		this.innerText = "Mute";
+		this.innerText = "Unmute";
 		console.log("Mute");
 	}
 }); 
